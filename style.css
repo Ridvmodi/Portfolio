@@ -1,0 +1,32 @@
+.profile{
+	margin-top: 80px;
+	background-color: #487EB0;
+	padding: 20px 0;
+	color: white;
+}
+.profile h3{
+	margin-left: 0;
+}
+img{
+	box-shadow: 5px 5px 10px grey;
+	border-radius: 50%;
+}
+h2{
+	text-indent: 40px;
+}
+.des{
+	text-indent: 70px;
+}
+.con{
+	margin-top: 50px;
+}
+li{
+	font-size: 20px;
+}
+.icons a{
+	color: black;
+	text-decoration: none;
+}
+span{
+	padding-left: 20px;
+}
