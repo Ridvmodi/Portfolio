@@ -1,0 +1,329 @@
+body {
+	margin: 0; 
+}
+.section1, .section2, .section3, .section4{
+	width: 100%;
+	height: 100vh;
+}
+.color1{
+	position: absolute;
+	width: 100%;
+	height: 400px;
+	background-color: #03BBD3;
+	transform-origin: top left;
+	transform: skewY(-35deg);
+	z-index: 2;
+	margin: 0; 
+}
+.color2{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 400px;
+	background-color: #B1EAF1;
+	transform-origin: top left;
+	transform: skewY(-10deg);
+	z-index: 1;
+	margin: 0;
+}
+.color3{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 400px;
+	background-color: #3498DB;
+	transform-origin: top right;
+	transform: skewY(27deg);
+	z-index: 2;
+	margin: 0;
+}
+.color4{
+	position: absolute;
+	top: 110%;
+	width: 100%;
+	height: 100px;
+	background-color: #B1EAF1;
+	transform-origin: top left;
+	transform: skewY(-4deg);
+	z-index: 2;
+	margin: 0;
+}
+.color4:after {
+	content: "";
+	position: absolute;
+	top: 130;
+	width: 100%;
+	height: 100px;
+	background-color: #3498DB;
+	transform-origin: top right;
+	transform: skewY(10deg);
+}
+.content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 51;
+	color: #0A3D62;	
+}
+#welcome {
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: 8px;
+	word-spacing: 10px;
+	font-size: 60px;
+	text-align: center;
+	text-transform: capitalize;
+	margin-top: 15%;
+	font-weight: 900;
+}
+.content hr {
+	height: 5px;
+	width: 700px;
+	position: relative;
+	top: -50px;
+	background-color: red;
+}
+.signature {
+	margin: 0;
+}
+.signature p {
+	font-family: 'Allura', cursive;
+	font-size: 60px;
+	text-align: center;
+	font-weight: 900;
+	transform: skewY(-15deg);
+}
+.signature p span {
+	margin-left: 10%;
+}
+#about{
+	margin-top: 200px;
+	text-align: center;
+	color: black;
+	font-size: 25px;
+}
+#about:after {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 7%;
+	margin-top: 37px;
+	margin-left: -99px;
+	background-color: red;
+}
+.desc {
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 60px;
+}
+.desc p {
+	text-align: justify;
+	font-size: 16px;
+	line-height: 24px;
+	color: #a8a8a8;
+}
+ .img {
+ 	margin-top: 40px;
+	background-color: rgba(31, 31, 31, .35);
+	width: 350px;
+	height: 350px;
+	border-radius: 7px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+}
+.img img {
+	width: 350px;
+	height: 350px;
+	border-radius: 7px;
+}
+.img img:hover{
+	opacity: 0;
+}
+.img:hover {
+	background-image: url("../img/mine.jpg");
+}
+/*Project Section*/
+#projects{
+	text-align: center;
+	color: black;
+	font-size: 25px;
+}
+.section3 hr{
+	height: 3px;
+	width: 6%;
+	background-color: red;
+	margin-top: -14px;
+}
+.cards{
+	margin-top: 80px;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+.istCard, .secCard{
+	position: relative;
+	width: 370px;
+	height: 400px;
+	float: left;
+	border-radius: 10px;
+	margin-bottom: 100px;
+}
+.istCard {
+	margin-right: 200px;
+}
+.card {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease;
+	border-radius: 10px;
+}
+.card:hover{
+	transform: rotateY(180deg);
+}
+.frontFace {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	color: black;
+	background: #e8eef2;
+	border-radius: 10px;
+	padding: 30px;
+}
+.frontFace h2 {
+	text-align: center;
+	font-family: "Dancing Script";
+	font-size: 35px;
+}
+.frontFace p {
+	text-align: center;
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 80px;
+}
+
+.backFace {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #e8eef2;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+	border-radius: 10px;
+	padding: 30px;
+}
+.backFace img {
+	width: 365px;
+	height: 200px;
+}
+.backFace p {
+	font-family: "Dancing Script";
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 900;
+	text-align: center;
+	margin-top: 50px;
+}
+.backFace a {
+	margin-top: 30px;
+	color: black;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+}
+.backFace a i {
+	font-size: 50px;
+	margin: 0 auto;
+}
+/*technologies section*/
+.section4{
+	margin-top: 500px;
+}
+#technologies{
+	margin-top: 400px;
+	text-align: center;
+	color: black;
+	font-size: 25px;
+}
+.section4 hr {
+	height: 3px;
+	width: 9%;
+	background-color: red;
+	margin-top: -14px;	
+}
+.section4 marquee {
+	margin-top: 50px;
+	width: 600px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+}
+.section4 marquee i {
+	font-size: 100px;
+}
+.section5 {
+	margin-top: -400px;
+}
+#contact{
+	margin-top: 0;
+	text-align: center;
+	color: black;
+	font-size: 25px;
+}
+.section5 hr {
+	height: 3px;
+	width: 9%;
+	background-color: red;
+	margin-top: -14px;	
+}
+.section5 .icons {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	margin-top: 30px;
+}
+.section5 .icons i {
+	font-size: 50px;
+	margin-right: 15px;
+	color: #4F67B1;
+}
+.section5 .icons i:hover {
+	color: #B0E9F0;
+}
+.footer {
+	margin-top: 150px;
+	height: 220px;
+	width: 100%;
+	position: relative;
+	overflow:hidden;
+}
+.footer:after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 200px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #38b4c1;
+	transform-origin: top right;
+	transform: skewY(-5deg);
+	overflow:hidden;
+}
+.footer i {
+	color: red;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.footer p {
+	letter-spacing: 2px;
+	font-size: 20px;
+	position: absolute;
+	left: 50%;
+	top: 130px;
+	transform: translate(-50%);
+	z-index: 58;
+}
