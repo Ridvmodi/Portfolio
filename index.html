@@ -19,7 +19,7 @@
 			<p id="welcome">Welcome, to my Portfolio!</p>
 			<hr>
 			<div class="signature">
-				<p>Ridhav<br><span>Modi</span></p>
+				<p id="sig"><span></span></p>
 			</div>
 		</div>
 	</div>
@@ -42,7 +42,7 @@
 				<div class="card">
 					<div class="frontFace">
 						<h2>Square One</h2>
-						<p>This Project is made during the Hackathon named Octahacks 2k17. Basicaly this project is made our team 404 Found!. This Project is for our Cafeteria to order food and pay online without standing in queue.</p>
+						<p>This Project is made during the Hackathon named Octahacks 2k17. Basicaly this project is made by our team 404 Found!. This Project is for our Cafeteria to order food and pay online without standing in queue.</p>
 					</div>
 					<div class="backFace">
 						<img src="img/sqone.png" alt="">
@@ -83,7 +83,7 @@
 				<div class="card">
 					<div class="frontFace">
 						<h2>Portfolio</h2>
-						<p>My Own Portfolio is made by me during college Epics session. I made this portfolio to showcase my details and Project information and Link to get the Project code.</p>
+						<p>My Own Portfolio is made by me. I made this portfolio to showcase my details and Project information and Link to get the Project code.</p>
 						
 					</div>
 					<div class="backFace">
@@ -99,6 +99,7 @@
 	<div class="section4">
 		<p id="technologies">Technologies</p>
 		<hr>
+		<p id="technologies-2">That I Use</p>
 		<marquee>
 			<i class="devicon-html5-plain-wordmark"></i>
 			<i class="devicon-javascript-plain colored"></i>
@@ -129,5 +130,22 @@
 	<div class="footer">
 		<p>With<i class="fa fa-heart"></i>By Ridv</p>
 	</div>
+
+
+	<script type="text/javascript">
+		var signature = "Ridhav Modi";
+		var signatureArray = signature.split("");
+		var loopTimer;
+		function printName() {
+			if(signatureArray.length > 0) {	
+				document.getElementById('sig').innerHTML += signatureArray.shift()
+			} else {
+				clearTimeout(loopTimer)
+				return false;
+			}
+			loopTimer = setTimeout('printName()', 105)
+		}
+		printName();
+	</script>
 </body>
 </html>

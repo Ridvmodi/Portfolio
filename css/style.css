@@ -137,6 +137,7 @@ body {
 	width: 350px;
 	height: 350px;
 	border-radius: 7px;
+	transition: opacity 0.8s;
 }
 .img img:hover{
 	opacity: 0;
@@ -182,6 +183,7 @@ body {
 }
 .card:hover{
 	transform: rotateY(180deg);
+	margin-left: 55px;
 }
 .frontFace {
 	position: absolute;
@@ -248,6 +250,12 @@ body {
 	color: black;
 	font-size: 25px;
 }
+#technologies-2 {
+	text-align: center;
+	font-family: 'Dancing Script', sans-serif;
+	font-size: 20px;
+	line-height: 28px; 
+}
 .section4 hr {
 	height: 3px;
 	width: 9%;
@@ -265,7 +273,7 @@ body {
 	font-size: 100px;
 }
 .section5 {
-	margin-top: -400px;
+	margin-top: -360px;
 }
 #contact{
 	margin-top: 0;
