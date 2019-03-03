@@ -11,7 +11,7 @@
 	<div class="container">
 		<div class="formBox">
 			<h2>Contact Me</h2>
-			<form name="feedback" action="process.php" method="post">
+			<form name="feedback" id="feedback">
 				<div class="inputBox">
 					<input type="text" name="Name" required>
 					<label>Name</label>
@@ -23,7 +23,7 @@
 				<div class="inputBox">
 					<textarea name="message" id="" cols="30" rows="10"></textarea>
 				</div>
-				<input type="submit" value="Submit" name="submit">
+				<input id="submit-form" type="submit" value="Submit" name="submit">
 			</form>
 		</div>
 		<div class="contactDetails">
@@ -37,5 +37,28 @@
 			</section>
 		</div>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.5.0/jquery.serialize-object.min.js"></script>
+	<script>
+		var $form = $('form#feedback'),
+	    url = 'https://script.google.com/macros/s/AKfycby2bPYC-xDlUD0icFd_bZHQ8ch7a5ehkEvYYFB8e0Znb_dGNnEj/exec'
+
+		$('#submit-form').on('click', function(e) {
+		  e.preventDefault();
+		  var jqxhr = $.ajax({
+		    url: url,
+		    method: "GET",
+		    dataType: "json",
+		    data: $form.serializeObject(),
+		    success: function(response) {
+		    	alert("Thanks for the Feedback");
+		    }
+		  });
+		})
+	</script>
+
+
+
+
 </body>
 </html>
